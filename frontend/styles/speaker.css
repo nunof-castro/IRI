@@ -1,0 +1,64 @@
+.speaker-wrapper {
+  background-color: #e4e4da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.speaker-wrapper .content {
+  display: flex;
+  gap: 50px;
+}
+
+.speaker-wrapper .content .left-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.speaker-wrapper .content .left-block img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.speaker-wrapper .content .left-block a {
+  text-decoration: underline;
+}
+.speaker-wrapper .content .right-block {
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.speaker-wrapper .content .right-block .role {
+  margin: 5px 0 20px 0;
+}
+
+@media (max-width: 992px) {
+  .speaker-wrapper {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .speaker-wrapper {
+    padding: 120px 40px 80px 40px;
+  }
+
+  .speaker-wrapper .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .speaker-wrapper .content .left-block {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 576px) {
+  .speaker-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

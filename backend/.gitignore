@@ -1,0 +1,27 @@
+# Dependências
+node_modules/
+
+# Ambiente / Configurações sensíveis
+.env
+.env.local
+.env.*.local
+
+# Build / Output
+dist/
+build/
+coverage/
+
+# Cache
+.cache/
+.nyc_output/
+.tmp/
+*.tsbuildinfo
+
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# IDE / Editores
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,237 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #c1b655;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 70px;
+  font-family: 'Cormorant_Garamond_Bold';
+}
+
+.hero img {
+  mix-blend-mode: exclusion;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.agenda {
+  background-color: #e4e4da;
+  display: flex;
+}
+
+.agenda-info {
+  width: 30%;
+  background-color: #c1b655;
+  padding: 80px 40px 80px 80px;
+  border-right: 1px solid black;
+}
+
+.agenda-info p {
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.agenda-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 80px 80px 80px 40px;
+  width: 70%;
+}
+
+.agenda-table {
+  border-collapse: collapse;
+  margin-top: 30px;
+  display: inline-table;
+  width: 100%;
+}
+
+.agenda-table tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.agenda-table td {
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.agenda-table td:last-child {
+  text-align: right;
+}
+
+.speakers {
+  background-color: black;
+  padding: 80px;
+  color: white;
+}
+
+.speakers .info h2 {
+  margin-bottom: 15px;
+}
+
+.speakers .info a {
+  display: block;
+  margin-top: 100px;
+  background-color: #c1b655;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #c1b655;
+  transition: all 0.5s ease;
+}
+
+.speakers .info a:hover {
+  background-color: black;
+  color: #c1b655;
+}
+
+.speakers-list {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 20px;
+}
+
+.speaker {
+  width: calc(25% - 15px);
+  height: 400px;
+  position: relative;
+}
+
+.speaker img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.speaker .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: white;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.speaker .info h4 {
+  font-family: 'Kanit_Light';
+  font-weight: 400;
+}
+
+.speaker .info a{
+    color: #c1b655;
+}
+
+.speaker .info a::after {
+  background-color: white;
+}
+
+.timeline-deadline {
+  display: flex;
+  gap: 80px;
+  padding: 80px;
+  background-color: #e4e4da;
+}
+
+.timeline-deadline .content {
+  width: 50%;
+}
+
+.timeline-deadline .content .agenda-table tr td:first-child {
+  font-family: 'Kanit_Semibold';
+}
+
+@media (max-width: 1200px) {
+  .speaker {
+    width: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .agenda {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 50px;
+  }
+
+  .agenda-info,
+  .agenda-schedule {
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+  }
+
+  .agenda-info {
+    border-right: none;
+  }
+
+  .agenda-info p {
+    margin-top: 10px;
+  }
+
+  .agenda-schedule {
+    gap: 70px;
+  }
+
+  .timeline-deadline {
+    flex-direction: column;
+    padding: 60px 40px;
+  }
+
+  .timeline-deadline .content {
+    width: 100%;
+  }
+
+  .speakers {
+    padding: 60px 40px;
+  }
+
+  .speakers-list {
+    gap: 30px 5px;
+  }
+
+  .speaker {
+    width: calc(50% - 3px);
+    height: 300px;
+    text-align: center;
+  }
+
+  .speaker a {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .agenda {
+    padding: 60px 20px;
+  }
+
+  .speakers {
+    padding: 60px 20px;
+  }
+
+  .timeline-deadline {
+    padding: 60px 20px;
+  }
+}
