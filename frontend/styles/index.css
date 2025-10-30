@@ -1,5 +1,5 @@
 .main-content {
-  background-color: #c1b655;
+  background-color: #FF6702;
 }
 
 .about-wrapper {
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #c1b655;
+  background-color: #FF6702;
   mix-blend-mode: exclusion;
 }
 
@@ -95,7 +95,7 @@
   .left-block {
     display: flex;
     flex-direction: row;
-    background-color: #c1b655;
+    background-color: #FF6702;
     mix-blend-mode: exclusion;
     height: 50vh;
   }
