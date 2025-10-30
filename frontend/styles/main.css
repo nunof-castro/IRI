@@ -1,3 +1,8 @@
+:root{
+  --main-color: #FF6702;
+  --background-color: #f1f1ec;
+}
+
 @font-face {
   font-family: 'Kanit_Bold';
   src: url(../assets/fonts/Kanit/Kanit-Bold.ttf);
@@ -73,6 +78,7 @@ body {
   font-size: 16px;
   color: #0e0e0e;
   font-family: 'Kanit_Light', sans-serif;
+  background-color: var(--background-color);
 }
 
 h1 {
