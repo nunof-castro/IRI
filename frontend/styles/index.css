@@ -32,16 +32,16 @@
 
 .right-block .content {
   position: absolute;
+  max-width: 700px;
   bottom: 50px;
 }
 
 .right-block .content h1 {
-  font-size: 270px;
-  line-height: 210px;
+  font-size: 100px;
+  line-height: 90px;
 }
 
 .right-block .content p {
-  font-size: 20px;
   color: var(--main-color);
 }
 
@@ -97,6 +97,20 @@
   text-align: right;
 }
 
+@media (max-width: 1275px) {
+  .right-block .content h1 {
+    font-size: 70px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .right-block .content h1 {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 992px) {
   .about-wrapper {
     display: block;
@@ -124,6 +138,10 @@
     display: none;
   }
 
+  .about {
+    padding: 60px 40px;
+  }
+
   .organizing-committee {
     padding: 60px 40px;
   }
@@ -131,5 +149,15 @@
   .committee-block {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+.about {
+    padding: 40px 20px;
+  }
+
+  .organizing-committee {
+    padding: 40px 20px;
   }
 }

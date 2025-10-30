@@ -74,11 +74,16 @@ a:hover:after {
   width: 100%;
 }
 
+main{
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   color: #0e0e0e;
   font-family: 'Kanit_Light', sans-serif;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 h1 {

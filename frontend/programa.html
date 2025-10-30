@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/icons/icn_logo_w.svg" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/program.css" />
-    <title>Programa</title>
+    <title>IRI | Programa</title>
   </head>
   <body>
     <header>
@@ -26,16 +26,21 @@
           <li><a href="./index.html">Sobre o IRI</a></li>
           <li><a href="./programa.html">Programa</a></li>
           <li><a href="./speakers.html">Speakers</a></li>
+          <li><a href="./iri-2024.html">IRI 2024</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="hero">
         <img
-          src="./assets/images/g2_pb_carro.jpg"
+          src="./assets/images/g1_paisagem_agua.jpg"
           alt="Hero Image | Programa"
           class="imgs-overlay"
         />
+        <div class="title-wrapper">
+          <h1>Programa</h1>
+          <p>IRI 2025</p>
+        </div>
       </div>
       <div class="agenda">
         <div class="agenda-info">
@@ -45,64 +50,15 @@
             programação completa e garante uma experiência enriquecedora
           </p>
         </div>
-        <div class="agenda-schedule">
-          <div class="daily-agenda">
-            <h3>Dia 1 | Abertura e Exposições</h3>
-            <table class="agenda-table">
-              <tr>
-                <td>10H00</td>
-                <td>Sessão de Abertura</td>
-                <td>Comissão Organizadora</td>
-              </tr>
-              <tr>
-                <td>11H00</td>
-                <td>Mesa-Redonda: O Futuro da Arte Digital</td>
-                <td>Ana Martins, João Moreira e Rita Fonseca</td>
-              </tr>
-              <tr>
-                <td>14H00</td>
-                <td>Exposição Interativa: Imagens do Real Imaginado</td>
-                <td>Vários artistas</td>
-              </tr>
-              <tr>
-                <td>15H00</td>
-                <td>
-                  Workshop: <br />
-                  Criatividade com Inteligência Artificial
-                </td>
-                <td>Miguel Rocha</td>
-              </tr>
-            </table>
+        <div class="events">
+          <div class="days">
+            <button class="day-btn active" data-day="3">SEG 3</button>
+            <button class="day-btn" data-day="4">TER 4</button>
+            <button class="day-btn" data-day="5">QUA 5</button>
+            <button class="day-btn" data-day="6">QUI 6</button>
+            <button class="day-btn" data-day="7">SEX 7</button>
           </div>
-
-          <div class="daily-agenda">
-            <h3>Dia 2 | Abertura e Exposições</h3>
-            <table class="agenda-table">
-              <tr>
-                <td>10H00</td>
-                <td>Sessão de Abertura</td>
-                <td>Comissão Organizadora</td>
-              </tr>
-              <tr>
-                <td>11H00</td>
-                <td>Mesa-Redonda: O Futuro da Arte Digital</td>
-                <td>Ana Martins, João Moreira e Rita Fonseca</td>
-              </tr>
-              <tr>
-                <td>14H00</td>
-                <td>Exposição Interativa: Imagens do Real Imaginado</td>
-                <td>Vários artistas</td>
-              </tr>
-              <tr>
-                <td>15H00</td>
-                <td>
-                  Workshop: <br />
-                  Criatividade com Inteligência Artificial
-                </td>
-                <td>Miguel Rocha</td>
-              </tr>
-            </table>
-          </div>
+          <div id="events-container" class="events-container"></div>
         </div>
       </div>
       <div class="speakers">
@@ -216,5 +172,7 @@
       </div>
       <p class="copyright">© 2025 Imagens do Real Imaginado</p>
     </footer>
+
+    <script src="./scripts/agenda.js"></script>
   </body>
 </html>
