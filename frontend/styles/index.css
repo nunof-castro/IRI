@@ -54,47 +54,43 @@
   margin-bottom: 20px;
 }
 
-.about p:first-of-type {
-  margin-bottom: 20px;
+.about h6 {
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+.about p {
+  margin-bottom: 12px;
 }
 
 .organizing-committee {
+  color: white;
   padding: 80px;
   background-color: var(--main-color);
 }
 
-.committee-block {
+.organizing-committee h2 {
+  margin-bottom: 20px;
+}
+
+.organizing-committee .delegation h3 {
+  font-family: 'Cormorant_Garamond_Regular';
+  font-size: 26px;
+  border-bottom: 1px solid white;
+  width: fit-content;
+  padding: 0 50px 5px 0;
+  margin-bottom: 15px;
+}
+
+.organizing-committee .delegation .group {
+  margin-bottom: 70px;
   display: flex;
-  gap: 100px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.committee-block:nth-child(2) {
-  margin-top: 80px;
-}
-
-.organizers-table {
-  border-collapse: collapse;
-  margin-top: 30px;
-  display: inline-table;
-  width: 100%;
-}
-
-.organizers-table tr {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-.organizers-table td {
-  padding: 15px 0;
-}
-
-.organizers-table td.role {
-  font-family: 'Kanit_Semibold';
-  text-transform: uppercase;
-}
-
-.organizers-table td.person {
-  text-align: right;
+.organizing-committee .delegation .group p{
+ /* font-size: 20px; */
 }
 
 @media (max-width: 1275px) {
@@ -145,15 +141,10 @@
   .organizing-committee {
     padding: 60px 40px;
   }
-
-  .committee-block {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 
 @media (max-width: 576px) {
-.about {
+  .about {
     padding: 40px 20px;
   }
 

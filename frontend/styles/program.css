@@ -179,20 +179,8 @@
   background-color: white;
 }
 
-.timeline-deadline {
-  display: flex;
-  gap: 80px;
-  padding: 80px;
-  background-color: #e4e4da;
-}
 
-.timeline-deadline .content {
-  width: 50%;
-}
 
-.timeline-deadline .content .agenda-table tr td:first-child {
-  font-family: 'Kanit_Semibold';
-}
 
 @media (max-width: 1275px) {
   .hero .title-wrapper h1 {
@@ -261,14 +249,9 @@
     margin-top: 30px;
   }
 
-  .timeline-deadline {
-    flex-direction: column;
-    padding: 60px 40px;
-  }
+  
 
-  .timeline-deadline .content {
-    width: 100%;
-  }
+
 
   .speakers {
     padding: 60px 40px;
@@ -311,10 +294,6 @@
   }
 
   .speakers {
-    padding: 60px 20px;
-  }
-
-  .timeline-deadline {
     padding: 60px 20px;
   }
 }
